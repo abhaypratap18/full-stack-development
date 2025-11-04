@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Filter</title>
+  <style>
+    body {
+      text-align: center; /* Center all inline elements like img and select */
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Virat Kohli</h3>
+  <img id="img" src="https://documents.bcci.tv/resizedimageskirti/164_compress.png" width="250" alt="Sample Image">
+
+  <br><br>
+  <select onchange="document.getElementById('img').style.filter = this.value">
+    <option value="none">None</option>
+    <option value="blur(4px)">Blur</option>
+    <option value="grayscale(100%)">Grayscale</option>
+    <option value="brightness(150%)">Brightness</option>
+    <option value="sepia(100%)">Sepia</option>
+  </select>
+
+</body>
+</html>
