@@ -1,0 +1,33 @@
+:root {
+  --main-bg-color: lightblue;
+  --main-text-color: darkblue;
+  --main-padding: 15px;
+  --box1-bg: #ffcccb; /* light red */
+  --box2-bg: #c8e6c9; /* light green */
+  --box3-bg: #bbdefb; /* light blue */
+  --box-border: darkblue;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: var(--main-padding);
+  font-family: Arial, sans-serif;
+}
+
+.block {
+  border: 2px solid var(--box-border);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.block1 { background-color: var(--box1-bg); }
+.block2 { background-color: var(--box2-bg); }
+.block3 { background-color: var(--box3-bg); }
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}

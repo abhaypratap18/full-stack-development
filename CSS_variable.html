@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Variables</title>
+<style>
+  :root {
+    --main-bg-color: lightblue;
+    --main-text-color: darkblue;
+    --main-padding: 15px;
+    --box1-bg: #ffcccb; 
+    --box2-bg: #c8e6c9; 
+    --box3-bg: #bbdefb; 
+    --box-border: darkblue;
+  }
+
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: var(--main-padding);
+    font-family: Arial, sans-serif;
+  }
+
+  .block {
+    border: 2px solid var(--box-border);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+  }
+
+  .block1 { background-color: var(--box1-bg); }
+  .block2 { background-color: var(--box2-bg); }
+  .block3 { background-color: var(--box3-bg); }
+
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="block block1">
+    <h2>Welcome to My Page</h2>
+  </div>
+
+  <div class="block block2">
+    <h2>About</h2>
+    <p>This is a simple webpage demonstrating CSS variables and multiple sections.</p>
+  </div>
+
+  <div class="block block3">
+    <h2>Email</h2>
+    <p>abhay@email.com</p>
+  </div>
+
+  <footer>
+    &copy; 2025 My Webpage. All rights reserved.
+  </footer>
+</body>
+</html>
